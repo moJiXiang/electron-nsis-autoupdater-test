@@ -1,0 +1,16 @@
+{
+  "name": "vue-example",
+  "version": "1.0.6",
+  "description": "An electron-vue project",
+  "main": "electron.js",
+  "dependencies": {
+    "electron-auto-updater": "^0.10.1",
+    "vue": "^2.0.1",
+    "vue-electron": "^1.0.0",
+    "vue-resource": "^1.0.3",
+    "vue-router": "^2.0.0",
+    "vuex": "^2.0.0"
+  },
+  "devDependencies": {},
+  "author": "yangdan <yangdan90@126.com>"
+}
