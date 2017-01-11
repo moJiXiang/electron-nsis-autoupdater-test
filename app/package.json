@@ -13,7 +13,7 @@
     "vuex": "^2.0.0"
   },
   "updater": {
-    "url": "https://api.elina2.net/v1.0/download/updates.json"
+    "url": "https://github.com/moJiXiang/electron-nsis-autoupdater-test/app/updates.json"
   },
   "devDependencies": {},
   "author": "yangdan <yangdan90@126.com>"
