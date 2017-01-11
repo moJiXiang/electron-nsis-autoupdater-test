@@ -54,9 +54,12 @@ function electronBuilder() {
           "url": "" // here is you https:// upload url
         },
         "win": {
-          "target": ["nsis"], // "dir" build win-unpacked
-          "icon": path.join(__dirname, '../app/icons/icon.ico')
+          "target": "squirrel"
         },
+        // "win": {
+        //   "target": ["nsis"], // "dir" build win-unpacked
+        //   "icon": path.join(__dirname, '../app/icons/icon.ico')
+        // },
         // "nsis": {
         //   "language": 2052,
         //   "installerHeader": path.join(__dirname, "../build/installerHeader.bmp"),

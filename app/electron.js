@@ -4,7 +4,7 @@ const electron = require('electron')
 const path = require('path')
 const app = electron.app
 const BrowserWindow = electron.BrowserWindow
-const updater = require('./updater.js')
+const updater = require('./simple-updater.js')
 
 let mainWindow
 let config = {}

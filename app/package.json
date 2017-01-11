@@ -1,15 +1,19 @@
 {
   "name": "vue-example",
-  "version": "1.0.6",
+  "version": "1.0.2",
   "description": "An electron-vue project",
   "main": "electron.js",
   "dependencies": {
     "electron-auto-updater": "^0.10.1",
+    "electron-simple-updater": "^1.2.0",
     "vue": "^2.0.1",
     "vue-electron": "^1.0.0",
     "vue-resource": "^1.0.3",
     "vue-router": "^2.0.0",
     "vuex": "^2.0.0"
+  },
+  "updater": {
+    "url": "https://api.elina2.net/v1.0/download/updates.json"
   },
   "devDependencies": {},
   "author": "yangdan <yangdan90@126.com>"
