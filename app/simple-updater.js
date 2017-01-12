@@ -9,11 +9,23 @@ exports.initialize = function(window) {
     });
 
     autoUpdater.on("update-downloaded", (event, releaseNotes, releaseName, releaseDate)=> {
-        autoUpdater.quitAndInstall()
+        dialog.showMessageBox(window, {
+            type: 'info',
+            title: 'Confirm',
+            message: 'update and download'
+        }, ()=> {
+
+            autoUpdater.quitAndInstall()
+        })
     })
 
     autoUpdater.on('update-available', (event)=> {
         console.log('update-available')
+        dialog.showMessageBox(window, {
+            type: 'info',
+            title: 'Confirm',
+            message: 'update available'
+        })
     })
 
     autoUpdater.on('update-not-available', (event)=> {
