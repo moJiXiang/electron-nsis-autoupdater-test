@@ -2,53 +2,26 @@ const {app, BrowserWindow, dialog} =  require('electron');
 const autoUpdater =  require('electron-simple-updater');
 
 exports.initialize = function(window) {
-    autoUpdater.addListener("update-available", (event)=> {
-        dialog.showMessageBox(
-            window,
-            {
-                type: 'info',
-                title: 'Confirm',
-                message: 'A new update is available'
-            });
-        console.log("A new update is available")
+    autoUpdater.init({
+        build: 'win32-ia32',
+        channel: 'prod',
+        url: 'https://raw.githubusercontent.com/moJiXiang/electron-nsis-autoupdater-test/master/app/updates.json'
+    });
+
+    autoUpdater.on("update-downloaded", (event, releaseNotes, releaseName, releaseDate)=> {
+        autoUpdater.quitAndInstall()
     })
 
-    autoUpdater.addListener("update-downloaded", (event, releaseNotes, releaseName, releaseDate)=> {
-        dialog.showMessageBox(
-            window,
-            {
-                type: 'info',
-                title: 'Confirm',
-                message: 'quit and install'
-            }, ()=> {
-
-                autoUpdater.quitAndInstall()
-            });
+    autoUpdater.on('update-available', (event)=> {
+        console.log('update-available')
     })
 
-    autoUpdater.addListener('error', (error)=> {
-        console.log(error)
-        dialog.showMessageBox(
-        window,
-        {
-            type: 'info',
-            title: 'Confirm',
-            message: error.message
-        });
-    })
-
-    autoUpdater.addListener('checking-for-update', (event)=> {
-        console.log("checking-for-update")
-        dialog.showMessageBox(
-        window,
-        {
-            type: 'info',
-            title: 'Confirm',
-            message: 'checking-for-update'
-        });
+    autoUpdater.on('update-not-available', (event)=> {
+        console.log('update-not-available')
     })
 
     window.webContents.once("did-frame-finish-load", (event) => {
+        console.log('checking............')
         autoUpdater.checkForUpdates()
     })
 }

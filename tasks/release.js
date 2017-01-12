@@ -53,6 +53,9 @@ function electronBuilder() {
           "provider": "generic",
           "url": "" // here is you https:// upload url
         },
+        "squirrelWindows": {
+          "iconUrl": path.join(__dirname, '../app/icons/icon.ico')
+        },
         "win": {
           "target": "squirrel"
         },
