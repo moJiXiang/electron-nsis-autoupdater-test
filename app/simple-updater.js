@@ -3,7 +3,7 @@ const autoUpdater =  require('electron-simple-updater');
 
 exports.initialize = function(window) {
     autoUpdater.init({
-        build: 'win32-ia32',
+        build: 'win32-x64',
         channel: 'prod',
         url: 'https://raw.githubusercontent.com/moJiXiang/electron-nsis-autoupdater-test/master/app/updates.json'
     });

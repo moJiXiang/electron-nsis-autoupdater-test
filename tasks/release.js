@@ -49,10 +49,10 @@ function electronBuilder() {
       build: {
         appId: "elina",
         asar: false,
-        "publish": {
-          "provider": "generic",
-          "url": "" // here is you https:// upload url
-        },
+        // "publish": {
+        //   "provider": "generic",
+        //   "url": "" // here is you https:// upload url
+        // },
         "squirrelWindows": {
           "iconUrl": path.join(__dirname, '../app/icons/icon.ico')
         },
