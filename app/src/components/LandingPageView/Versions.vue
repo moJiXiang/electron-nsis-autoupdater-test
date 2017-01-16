@@ -1,6 +1,6 @@
 <template>
   <p>
-    version 1.0.4.You are using electron v{{ versions['atom-shell'] }} with node v{{ versions.node }} on the {{ platform }} platform.
+    version 1.0.3.You are using electron v{{ versions['atom-shell'] }} with node v{{ versions.node }} on the {{ platform }} platform.
   </p>
 
 </template>
