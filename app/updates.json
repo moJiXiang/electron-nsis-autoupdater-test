@@ -4,6 +4,13 @@
     "update": "https://github.com/moJiXiang/electron-nsis-autoupdater-test/releases/download/win-x64-prod-1.0.5",
     "install": "https://github.com/moJiXiang/electron-nsis-autoupdater-test/releases/download/win-x64-prod-1.0.5/elina.Setup.1.0.5.exe",
     "version": "1.0.5"
+  },
+
+  "darwin-x64-prod": {
+    "readme": "First release",
+    "update": "https://github.com/moJiXiang/electron-nsis-autoupdater-test/releases/download/darwin-x64-prod-1.0.5",
+    "install": "https://github.com/moJiXiang/electron-nsis-autoupdater-test/releases/download/darwin-x64-prod-1.0.5/elina.Setup.1.0.5.exe",
+    "version": "1.0.5"
   }
 }
 
