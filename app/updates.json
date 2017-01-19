@@ -9,7 +9,7 @@
   "darwin-x64-prod": {
     "readme": "First release",
     "update": "https://github.com/moJiXiang/electron-nsis-autoupdater-test/releases/download/darwin-x64-prod-1.0.5",
-    "install": "https://github.com/moJiXiang/electron-nsis-autoupdater-test/releases/download/darwin-x64-prod-1.0.5/elina-darwin-1.0.4.dmg",
+    "install": "https://github.com/moJiXiang/electron-nsis-autoupdater-test/releases/download/darwin-x64-prod-1.0.5/elina-darwin-1.0.5.dmg",
     "version": "1.0.5"
   }
 }
